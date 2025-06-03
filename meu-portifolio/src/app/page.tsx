@@ -22,8 +22,7 @@ export default function HomePage() {
 
         <h2 className="text-4xl font-bold text-[#A2678A]">Olá, eu sou a Bruna! 💻✨</h2>
         <p className="text-lg max-w-xl text-[#6D5D6E]">
-          Desenvolvedora <span className="font-semibold text-[#865858]">Fullstack</span> apaixonada por transformar ideias em experiências digitais incríveis. <br />
-          Trabalho com <strong>React</strong>, <strong>Next.js</strong>, <strong>Spring Boot</strong> e <strong>Flutter</strong>.
+          Desenvolvedora <span className="font-semibold text-[#865858]">Fullstack</span> com foco em construir soluções digitais modernas, eficientes e com ótima experiência do usuário. Tenho experiência com <strong>React</strong>, <strong>Next.js</strong>, <strong>Spring Boot</strong> e <strong>Flutter</strong>. Estou pronta para colaborar em projetos e desafios profissionais.
         </p>
 
         <motion.a 
