@@ -23,7 +23,7 @@ export default function HeaderClient() {
       `}
     >
       <div className="max-w-5xl mx-auto px-6 flex justify-between items-center">
-        <h1 className="text-3xl font-bold tracking-wide">Bruna Dev</h1>
+        <h1 className="text-3xl font-bold tracking-wide">Bruna Roberta</h1>
         <nav className="flex gap-6 text-sm font-semibold">
           <Link href="/" className="flex items-center gap-2 hover:text-[#B88C9E] transition">
             <FaHome /> Home
