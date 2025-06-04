@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt-br">
       <body className={`${inter.className} bg-[#FDF6F0] text-[#4A4A4A] flex flex-col min-h-screen`}>
         <HeaderClient />
-        <main className="max-w-4xl mx-auto px-4 py-10 flex-grow">
+        <main className="px-4 py-10 flex-grow">
           {children}
         </main>
         <footer className="text-center py-6 text-sm text-[#865858] bg-[#F8E8EE] mt-auto">

@@ -5,16 +5,29 @@ import Image from 'next/image'
 
 export default function HomePage() {
   return (
-    <main className="w-full py-20 flex-grow bg-[#FFF8F3] text-white flex flex-col md:flex-row">
-
-      {/* Texto à esquerda com animação */}
+    <main className="w-full py-20 flex-grow text-white flex flex-col md:flex-row">
       <motion.div 
-        initial={{ opacity: 0, y: 40 }} 
-        animate={{ opacity: 1, y: 0 }} 
+        initial={{ opacity: 0, scale: 0.8 }} 
+        animate={{ opacity: 1, scale: 1 }} 
+        transition={{ duration: 0.8, delay: 0.7 }}
+        className="flex-1 flex justify-center items-center mt-10 md:mt-0"
+      >
+      <Image
+        src="/assets/aspiral.png"
+        alt="Foto da Bruna"
+        width={224}
+        height={224}
+        className="object-cover"
+      />
+      </motion.div>
+      {/* Texto à esquerda com animação */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         className="flex-1 text-center md:text-left text-[#6D5D6E] px-4 flex flex-col justify-center"
       >
-        <h2 className="text-4xl font-bold text-[#A2678A] mb-4">
+        <h2 className="text-4xl font-bold text-[#A2678A]">
           Código limpo. Interfaces eficientes. Resultados reais.
         </h2>
         <p className="text-lg mb-6">
@@ -22,9 +35,9 @@ export default function HomePage() {
         </p>
 
         {/* Botão com texto centralizado e padding lateral menor */}
-        <motion.a 
-          href="/projects" 
-          whileHover={{ scale: 1.05 }} 
+        <motion.a
+          href="/projects"
+          whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -36,18 +49,18 @@ export default function HomePage() {
       </motion.div>
 
       {/* Imagem */}
-      <motion.div 
-        initial={{ opacity: 0, scale: 0.8 }} 
-        animate={{ opacity: 1, scale: 1 }} 
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.7 }}
         className="flex-1 flex justify-center items-center mt-10 md:mt-0"
       >
         <div className="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-[#FFD1DC] shadow-lg">
-          <Image 
-            src="/assets/icon.jpg" 
-            alt="Foto da Bruna" 
-            width={224} 
-            height={224} 
+          <Image
+            src="/assets/icon.jpg"
+            alt="Foto da Bruna"
+            width={224}
+            height={224}
             className="w-full h-full object-cover"
           />
         </div>
