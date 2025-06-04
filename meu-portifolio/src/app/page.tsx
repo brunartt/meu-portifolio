@@ -29,7 +29,7 @@ export default function HomePage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="inline-block bg-gradient-to-r from-[#FFD1DC] to-[#FBB1C3] text-[#8A4F7D] px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all text-center"
+          className="inline-block w-1/2 bg-gradient-to-r from-[#FFD1DC] to-[#FBB1C3] text-[#8A4F7D] px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all text-center"
         >
           Ver Projetos
         </motion.a>
