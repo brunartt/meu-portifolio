@@ -5,35 +5,54 @@ import Image from 'next/image'
 
 export default function HomePage() {
   return (
-    <section className="text-center bg-[#FFF8F3] min-h-screen flex items-center justify-center py-20 px-4">
+    <main className="w-full py-20 flex-grow bg-[#FFF8F3] text-white flex flex-col md:flex-row">
+
+      {/* Texto à esquerda com animação */}
       <motion.div 
         initial={{ opacity: 0, y: 40 }} 
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 0.8 }}
-        className="flex flex-col items-center gap-8 bg-white/60 backdrop-blur-md p-10 rounded-2xl shadow-xl max-w-2xl mx-auto border border-[#FDE2E4]"
+        className="flex-1 text-center md:text-left text-[#6D5D6E] px-4 flex flex-col justify-center"
       >
-        <Image 
-          src="/avatar-bruna.png" 
-          alt="Foto da Bruna" 
-          width={160} 
-          height={160} 
-          className="rounded-full shadow-lg border-4 border-[#FFD1DC]"
-        />
-
-        <h2 className="text-4xl font-bold text-[#A2678A]">Olá, eu sou a Bruna! 💻✨</h2>
-        <p className="text-lg max-w-xl text-[#6D5D6E]">
-          Desenvolvedora <span className="font-semibold text-[#865858]">Fullstack</span> com foco em construir soluções digitais modernas, eficientes e com ótima experiência do usuário. Tenho experiência com <strong>React</strong>, <strong>Next.js</strong>, <strong>Spring Boot</strong> e <strong>Flutter</strong>. Estou pronta para colaborar em projetos e desafios profissionais.
+        <h2 className="text-4xl font-bold text-[#A2678A] mb-4">
+          Código limpo. Interfaces eficientes. Resultados reais.
+        </h2>
+        <p className="text-lg mb-6">
+          Desenvolvedora junior com experiência em <span className="font-semibold text-[#865858]">Front-end</span> focada em performance e experiência do usuário.
         </p>
 
+        {/* Botão com texto centralizado e padding lateral menor */}
         <motion.a 
           href="/projects" 
           whileHover={{ scale: 1.05 }} 
           whileTap={{ scale: 0.95 }}
-          className="inline-block mt-4 bg-gradient-to-r from-[#FFD1DC] to-[#FBB1C3] text-[#8A4F7D] px-8 py-3 rounded-full shadow-md hover:shadow-lg transition-all"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="inline-block bg-gradient-to-r from-[#FFD1DC] to-[#FBB1C3] text-[#8A4F7D] px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all text-center"
         >
-          Ver Projetos 💼
+          Ver Projetos
         </motion.a>
       </motion.div>
-    </section>
+
+      {/* Imagem à direita com animação */}
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.8 }} 
+        animate={{ opacity: 1, scale: 1 }} 
+        transition={{ duration: 0.8, delay: 0.7 }}
+        className="flex-1 flex justify-center items-center mt-10 md:mt-0"
+      >
+        <div className="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-[#FFD1DC] shadow-lg">
+          <Image 
+            src="/avatar-bruna.png" 
+            alt="Foto da Bruna" 
+            width={224} 
+            height={224} 
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </motion.div>
+
+    </main>
   )
 }
