@@ -5,6 +5,7 @@ import HeaderClient from './components/HeaderClient'
 
 const inter = Inter({ subsets: ['latin'] })
 
+
 export const metadata = {
   title: 'Portfólio da Bruna',
   description: 'Web Developer Fullstack',
