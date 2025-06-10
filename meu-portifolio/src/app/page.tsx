@@ -29,7 +29,7 @@ export default function HomePage() {
         transition={{ duration: 0.8 }}
         className="flex-1 text-center md:text-left text-[#6D5D6E] px-4 flex flex-col justify-center"
       >
-        <h2 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-5xl text-white font-bold">
+        <h2 className="animate-typing overflow-hidden border-r-4 border-r pr-5 text-5xl text-[#865858] font-bold">
           Código limpo. Interfaces eficientes. Resultados reais.
         </h2>
         <p className="text-lg mb-6">
